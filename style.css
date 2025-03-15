@@ -1,0 +1,98 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, #ff0000, #ff7300, #ffeb00, #47ff00, #00ffea, #2b65ff, #8000ff);
+            background-size: 400% 400%;
+            animation: gradientBG 5s infinite alternate;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        .chat-container {
+            width: 400px;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+        }
+        .robot-img {
+            width: 180px;
+            position: absolute;
+            top: -90px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .voice-icon {
+            width: 60px;
+            height: 60px;
+            margin: 10px auto;
+            cursor: pointer;
+        }
+        .voice-icon img {
+            width: 100%;
+        }
+        .chat-box {
+            height: 200px;
+            overflow-y: auto;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+        .message {
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        .user {
+            background: #007bff;
+            color: white;
+            text-align: right;
+        }
+        .bot {
+            background: #e1e1e1;
+            text-align: left;
+        }
+        .input-box {
+            display: flex;
+            margin-top: 10px;
+        }
+        .input-box input {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .input-box button {
+            padding: 8px;
+            background: #007bff;
+            color: white;
+            border: none;
+            margin-left: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .creator-info {
+            margin-top: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+        }
+        .listening {
+            font-size: 14px;
+            color: red;
+            margin-top: 5px;
+            display: none;
+        }
+    
